@@ -1,0 +1,58 @@
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("https://i.gyazo.com/7e347b50371f47a4ccf5007fce5a2cb2.jpg");
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: lighten;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.key {
+  flex: none;
+  border: 4px solid rgba(15, 15, 15, 0.7);
+  border-radius: 10px;
+  color: #eeeeee;
+  background-color: rgba(15, 15, 15, 0.7);
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.key:hover {
+  opacity: 0.9;
+}
+
+kbd {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 5px 0;
+  display: block;
+  text-align: center;
+}
+
+.sound {
+  color: #f8b500;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
