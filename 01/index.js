@@ -5,6 +5,6 @@ function playDrum(event) {
   const keyElem = document.querySelector(`div[data-key="${pressedKey}"]`);
   const audioElem = document.querySelector(`audio[data-key=${pressedKey}]`);
 
-  // TODO: 連続で再生できるようにする
+  audioElem.currentTime = 0;
   audioElem.play();
 }
