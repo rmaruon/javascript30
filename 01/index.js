@@ -18,5 +18,6 @@ function playDrum(event) {
 }
 
 function removePlayingClass(event) {
+  if (event.propertyName !== "transform") return; // remove just once
   this.classList.remove("playing");
 }
