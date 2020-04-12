@@ -36,10 +36,15 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  transition: all 0.1s ease;
 }
 
 .key:hover {
   opacity: 0.9;
+}
+
+.key.playing {
+  border-color: rgba(248, 181, 0, 0.8);
 }
 
 kbd {
