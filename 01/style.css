@@ -36,7 +36,7 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  transition: all 0.1s ease;
+  transition: all 0.07s ease;
 }
 
 .key:hover {
