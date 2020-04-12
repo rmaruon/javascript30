@@ -9,6 +9,8 @@ function playDrum(event) {
   const keyElem = document.querySelector(`div[data-key="${pressedKey}"]`);
   const audioElem = document.querySelector(`audio[data-key=${pressedKey}]`);
 
+  if (!audioElem) return;
+
   keyElem.classList.add("playing");
 
   audioElem.currentTime = 0;
