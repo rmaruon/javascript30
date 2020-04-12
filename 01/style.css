@@ -45,6 +45,8 @@ body {
 
 .key.playing {
   border-color: rgba(248, 181, 0, 0.8);
+  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(1.1);
 }
 
 kbd {
