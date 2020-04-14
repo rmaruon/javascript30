@@ -2,8 +2,6 @@ html {
   background-color: #018ded;
   background-image: url(http://picsum.photos/1500/1000?image=881&blur=5);
   background-size: cover;
-  /* font-family: "helvetica neue"; */
-  /* text-align: center; */
   font-size: 10px;
 }
 
@@ -11,7 +9,6 @@ body {
   margin: 0;
   font-size: 2rem;
   display: flex;
-  /* flex: 1; */
   min-height: 100vh;
   align-items: center;
 }
