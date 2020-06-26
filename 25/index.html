@@ -8,15 +8,99 @@
 </head>
 
 <body class="bod">
+  <div id="a">
+    <p>Event Bubbling</p>
+    <pre><code>function logText(e) {
+  console.log(this.classList.value);
+}
 
-  <div class="one">
-    <div class="two">
-      <div class="three">
+div.addEventListener("mousedown", logText);</code></pre>
+    <div class="one">
+      one
+      <div class="two">
+        two
+        <div class="three">
+          three
+        </div>
       </div>
     </div>
   </div>
 
-  <button></button>
+  <div id="b">
+    <p>Event Capture</p>
+    <pre><code>function logText(e) {
+    console.log(this.classList.value);
+  }
+
+div.addEventListener("mousedown", logText, { capture: true });</code></pre>
+    <div class="one">
+      one
+      <div class="two">
+        two
+        <div class="three">
+          three
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="c">
+    <p>Event Bubbling (with Stop Propagation)</p>
+    <pre><code>function logTextWithStopPropagation(e) {
+  console.log(this.classList.value);
+  e.stopPropagation();
+}
+
+div.addEventListener("mousedown", logTextWithStopPropagation);</code></pre>
+    <div class="one">
+      one
+      <div class="two">
+        two
+        <div class="three">
+          three
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="d">
+    <p>Event Capture (with Stop Propagation)</p>
+    <pre><code>function logTextWithStopPropagation(e) {
+  console.log(this.classList.value);
+  e.stopPropagation();
+}
+
+div.addEventListener("mousedown", logTextWithStopPropagation, { capture: true });</code></pre>
+    <div class="one">
+      one
+      <div class="two">
+        two
+        <div class="three">
+          three
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="e">
+    <p>Once</p>
+    <pre><code>function logText(e) {
+  console.log(this.classList.value);
+}
+
+div.addEventListener("mousedown", logText, { once: true })</code></pre>
+    <div class="one">
+      one
+      <div class="two">
+        two
+        <div class="three">
+          three
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button>click once</button>
 
   <script src="index.js"></script>
 </body>

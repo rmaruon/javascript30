@@ -10,17 +10,29 @@ html {
 
 div {
   width: 100%;
-  padding: 100px;
+  padding: 50px;
 }
 
 .one {
   background: thistle;
+  padding: 20px;
 }
 
 .two {
   background: mistyrose;
+  padding: 20px;
 }
 
 .three {
   background: coral;
+  padding: 20px;
+}
+
+pre {
+  padding: 1em;
+  border: 1px solid #000;
+  width: auto;
+  overflow: auto;
+  color: #000;
+  background-color: #f6f6f6;
 }
