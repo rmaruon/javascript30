@@ -69,3 +69,18 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+.button-wrapper {
+  text-align: center;
+  margin: 50px 0;
+}
+
+button {
+  font-size: 2rem;
+  padding: 5px 10px;
+}
+
+.message {
+  font-size: 4rem;
+  text-align: center;
+}
